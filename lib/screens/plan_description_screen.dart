@@ -34,6 +34,7 @@ class PlanDescriptionScreen extends ConsumerWidget {
                     BuildPlanComponent(
                       title: 'Monthly Plan',
                       price: '9.99',
+                      time: "monthly",
                       features: [
                         'Include All Features of Standard plans with advance AI features',
                         'AI Video Call Effect (Ai filters)',
@@ -51,6 +52,7 @@ class PlanDescriptionScreen extends ConsumerWidget {
                     BuildPlanComponent(
                       title: 'Quarterly Plan',
                       price: '26.97',
+                      time: "quarterly",
                       features: [
                         'Include All Features of Standard plans with advance AI features',
                         'AI Video Call Effect (Ai filters)',
@@ -68,6 +70,7 @@ class PlanDescriptionScreen extends ConsumerWidget {
                     BuildPlanComponent(
                       title: 'Yearly Plan',
                       price: '95.90',
+                      time: "year",
                       features: [
                         'Include All Features of Standard plans with advance AI features',
                         'AI Video Call Effect (Ai filters)',

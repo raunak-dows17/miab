@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 class BuildPlanComponent extends ConsumerWidget {
   final String title;
   final String price;
+  final String time;
   final List<String> features;
   final Map<String, String> paymentLinks;
 
@@ -12,6 +13,7 @@ class BuildPlanComponent extends ConsumerWidget {
     super.key,
     required this.title,
     required this.price,
+    required this.time,
     required this.features,
     required this.paymentLinks,
   });
@@ -58,9 +60,9 @@ class BuildPlanComponent extends ConsumerWidget {
                     color: Colors.teal,
                   ),
                 ),
-                const Text(
-                  ' /month',
-                  style: TextStyle(
+                Text(
+                  ' /$time',
+                  style: const TextStyle(
                     fontSize: 16,
                     color: Colors.black,
                   ),
