@@ -4,8 +4,8 @@
 <dict>
 <key>ITSAppUsesNonExemptEncryption</key>
 <true/>
-<key>NSPhotoLibraryUsageDescription</key>
-<string>Allow access to the photo library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library to allow you to upload photos and enhance your experience.</string>
     <key>NSCameraUsageDescription</key>
     <string>Allow access to the camera</string>
     <key>NSMicrophoneUsageDescription</key>
