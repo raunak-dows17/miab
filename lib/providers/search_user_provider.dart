@@ -5,8 +5,8 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
 import 'package:message_in_a_botlle/models/user_model.dart';
 
-// String _url = "https://48mz9gbq-5000.inc1.devtunnels.ms";
-String _url = "https://api.messageinabotlle.app/";
+String _url = "https://miab.onrender.com";
+// String _url = "https://api.messageinabotlle.app/";
 
 class UserSearchState {
   final List<User> allUsers;
