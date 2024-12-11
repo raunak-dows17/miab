@@ -95,7 +95,6 @@ class BuildPlanComponent extends ConsumerWidget {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // Open payment options
                 _showPaymentOptionsDialog(context, paymentLinks);
               },
               style: ElevatedButton.styleFrom(
@@ -132,29 +131,33 @@ class BuildPlanComponent extends ConsumerWidget {
             children: paymentLinks.entries.map((entry) {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 8.0),
-                child: ElevatedButton(
-                  onPressed: () async {
-                    print(entry.value);
-                    final Uri url = Uri.parse(entry.value);
-                    if (await canLaunchUrl(url)) {
-                      await launchUrl(url);
-                    } else {
-                      // Handle error
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Could not launch $url')),
-                      );
-                    }
+                child: Column(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () async {
+                        print(entry.value);
+                        final Uri url = Uri.parse(entry.value);
+                        if (await canLaunchUrl(url)) {
+                          await launchUrl(url);
+                        } else {
+                          // Handle error
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(content: Text('Could not launch $url')),
+                          );
+                        }
 
-                    Navigator.of(context).pop();
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal.shade700,
-                    minimumSize: const Size(double.infinity, 50),
-                  ),
-                  child: Text(
-                    '${entry.key} Payment',
-                    style: const TextStyle(color: Colors.white),
-                  ),
+                        Navigator.of(context).pop();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.teal.shade700,
+                        minimumSize: const Size(double.infinity, 50),
+                      ),
+                      child: Text(
+                        '${entry.key} Payment',
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ],
                 ),
               );
             }).toList(),
