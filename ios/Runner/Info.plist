@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>ITSAppUsesNonExemptEncryption</key>
-    <false/>
+    <true/>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>We need access to your photo library to allow you to upload photos and enhance your experience.</string>
     <key>NSCameraUsageDescription</key>
