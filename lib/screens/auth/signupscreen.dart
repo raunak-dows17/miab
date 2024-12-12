@@ -48,6 +48,10 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
         );
       }
 
+      if (next.error == "User already exists") {
+        context.go("/auth/login");
+      }
+
       if (next.token != null) {
         context.go("/");
       }

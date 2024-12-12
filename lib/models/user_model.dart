@@ -5,7 +5,7 @@ class User {
   final String email;
   final String mobile;
   final String avatar;
-  // final bool isPremium;
+  // final bool isPremium;s
 
   User({
     required this.id,

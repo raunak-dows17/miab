@@ -43,9 +43,6 @@ class _LoginscreenState extends ConsumerState<Loginscreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(next.error!)),
         );
-        if (next.error == "User already exists") {
-          context.go("/auth/login");
-        }
       }
 
       if (next.token != null) {

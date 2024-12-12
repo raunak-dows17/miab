@@ -42,7 +42,7 @@ class PlanDescriptionScreen extends ConsumerWidget {
                         "Encrypt your chat with AI (Encrypt and Decrypt the chat using AI)",
                       ],
                       paymentLinks: {
-                        'Domestic':
+                        'Indian':
                             'https://www.instamojo.com/@k2kitsupport/l6630c104487b4aefa9bd815588cdc1e7/',
                         'International':
                             'https://buy.stripe.com/7sI4gY51w0qLclW9AK',
@@ -60,7 +60,7 @@ class PlanDescriptionScreen extends ConsumerWidget {
                         "Encrypt your chat with AI (Encrypt and Decrypt the chat using AI)",
                       ],
                       paymentLinks: {
-                        'Domestic':
+                        'Indian':
                             'https://www.instamojo.com/@k2kitsupport/l5073ae56337148339aaf1e7990ae9192/',
                         'International':
                             'https://buy.stripe.com/dR63cUfGac9t2Lm4gr',
@@ -78,7 +78,7 @@ class PlanDescriptionScreen extends ConsumerWidget {
                         "Encrypt your chat with AI (Encrypt and Decrypt the chat using AI)",
                       ],
                       paymentLinks: {
-                        'Domestic':
+                        'Indian':
                             'https://www.instamojo.com/@k2kitsupport/l2dd315e00c774b2eb8c22043523cc9a7/',
                         'International':
                             'https://buy.stripe.com/8wM00IgKe0qLadO00d',

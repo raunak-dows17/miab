@@ -5,11 +5,11 @@ import 'package:http/http.dart' as http;
 import 'package:message_in_a_botlle/models/user_model.dart';
 import 'package:message_in_a_botlle/utils/secure_storage.dart';
 import 'package:zego_uikit_prebuilt_call/zego_uikit_prebuilt_call.dart';
-import 'package:zego_uikit_signaling_plugin/zego_uikit_signaling_plugin.dart';
-import 'package:zego_zimkit/zego_zimkit.dart';
+// import 'package:zego_uikit_signaling_plugin/zego_uikit_signaling_plugin.dart';
+// import 'package:zego_zimkit/zego_zimkit.dart';
 
-String _url = "https://miab.onrender.com/api";
-// String _url = "https://api.messageinabotlle.app/api";
+// String _url = "https://miab.onrender.com/api";
+String _url = "https://api.messageinabotlle.app/api";
 
 class AuthState {
   final User? user;
@@ -83,31 +83,31 @@ class AuthNotifier extends StateNotifier<AuthState> {
           isLoading: false,
         );
 
-        ZegoUIKitPrebuiltCallInvitationService().init(
-          appID: 770575310,
-          appSign:
-              "35f243a352844308a18bdacc7d10caec384b9d0c3e56a6958d46cc87b10c0183" /*input your AppSign*/,
-          userID: user.id,
-          userName: "${user.firstName} ${user.lastName}",
-          plugins: [ZegoUIKitSignalingPlugin()],
-          requireConfig: (ZegoCallInvitationData data) {
-            var config = (data.invitees.length > 1)
-                ? ZegoCallType.videoCall == data.type
-                    ? ZegoUIKitPrebuiltCallConfig.groupVideoCall()
-                    : ZegoUIKitPrebuiltCallConfig.groupVoiceCall()
-                : ZegoCallType.videoCall == data.type
-                    ? ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall()
-                    : ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall();
+        // ZegoUIKitPrebuiltCallInvitationService().init(
+        //   appID: 770575310,
+        //   appSign:
+        //       "35f243a352844308a18bdacc7d10caec384b9d0c3e56a6958d46cc87b10c0183" /*input your AppSign*/,
+        //   userID: user.id,
+        //   userName: "${user.firstName} ${user.lastName}",
+        //   plugins: [ZegoUIKitSignalingPlugin()],
+        //   requireConfig: (ZegoCallInvitationData data) {
+        //     var config = (data.invitees.length > 1)
+        //         ? ZegoCallType.videoCall == data.type
+        //             ? ZegoUIKitPrebuiltCallConfig.groupVideoCall()
+        //             : ZegoUIKitPrebuiltCallConfig.groupVoiceCall()
+        //         : ZegoCallType.videoCall == data.type
+        //             ? ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall()
+        //             : ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall();
 
-            config
-              ..turnOnCameraWhenJoining = false
-              ..turnOnMicrophoneWhenJoining = false
-              ..useSpeakerWhenJoining = true;
-            return config;
-          },
-        );
-        await ZIMKit().connectUser(
-            id: user.id, name: "${user.firstName} ${user.lastName}");
+        //     config
+        //       ..turnOnCameraWhenJoining = false
+        //       ..turnOnMicrophoneWhenJoining = false
+        //       ..useSpeakerWhenJoining = true;
+        //     return config;
+        //   },
+        // );
+        // await ZIMKit().connectUser(
+        //     id: user.id, name: "${user.firstName} ${user.lastName}");
       }
     } catch (e) {
       state = state.copyWith(
@@ -145,33 +145,33 @@ class AuthNotifier extends StateNotifier<AuthState> {
           isLoading: false,
         );
 
-        ZegoUIKitPrebuiltCallInvitationService().init(
-          appID: 770575310,
-          appSign:
-              "35f243a352844308a18bdacc7d10caec384b9d0c3e56a6958d46cc87b10c0183" /*input your AppSign*/,
-          userID: user.id,
-          userName: "${user.firstName} ${user.lastName}",
-          plugins: [ZegoUIKitSignalingPlugin()],
-          requireConfig: (ZegoCallInvitationData data) {
-            var config = (data.invitees.length > 1)
-                ? ZegoCallType.videoCall == data.type
-                    ? ZegoUIKitPrebuiltCallConfig.groupVideoCall()
-                    : ZegoUIKitPrebuiltCallConfig.groupVoiceCall()
-                : ZegoCallType.videoCall == data.type
-                    ? ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall()
-                    : ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall();
+        // ZegoUIKitPrebuiltCallInvitationService().init(
+        //   appID: 770575310,
+        //   appSign:
+        //       "35f243a352844308a18bdacc7d10caec384b9d0c3e56a6958d46cc87b10c0183" /*input your AppSign*/,
+        //   userID: user.id,
+        //   userName: "${user.firstName} ${user.lastName}",
+        //   plugins: [ZegoUIKitSignalingPlugin()],
+        //   requireConfig: (ZegoCallInvitationData data) {
+        //     var config = (data.invitees.length > 1)
+        //         ? ZegoCallType.videoCall == data.type
+        //             ? ZegoUIKitPrebuiltCallConfig.groupVideoCall()
+        //             : ZegoUIKitPrebuiltCallConfig.groupVoiceCall()
+        //         : ZegoCallType.videoCall == data.type
+        //             ? ZegoUIKitPrebuiltCallConfig.oneOnOneVideoCall()
+        //             : ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall();
 
-            // Modify your custom configurations here.
-            config
-              ..turnOnCameraWhenJoining = false
-              ..turnOnMicrophoneWhenJoining = false
-              ..useSpeakerWhenJoining = true;
-            return config;
-          },
-        );
+        //     // Modify your custom configurations here.
+        //     config
+        //       ..turnOnCameraWhenJoining = false
+        //       ..turnOnMicrophoneWhenJoining = false
+        //       ..useSpeakerWhenJoining = true;
+        //     return config;
+        //   },
+        // );
 
-        await ZIMKit().connectUser(
-            id: user.id, name: "${user.firstName} ${user.lastName}");
+        // await ZIMKit().connectUser(
+        //     id: user.id, name: "${user.firstName} ${user.lastName}");
       }
     } catch (e) {
       state = state.copyWith(

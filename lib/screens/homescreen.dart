@@ -5,7 +5,7 @@ import 'package:message_in_a_botlle/models/user_model.dart';
 import 'package:message_in_a_botlle/providers/auth_provider.dart';
 import 'package:message_in_a_botlle/providers/search_user_provider.dart';
 import 'package:message_in_a_botlle/providers/user_provider.dart';
-import 'package:message_in_a_botlle/routes.dart';
+// import 'package:message_in_a_botlle/routes.dart';
 import 'package:zego_zimkit/zego_zimkit.dart';
 
 class HomePage extends ConsumerStatefulWidget {
@@ -22,11 +22,15 @@ class _HomePageState extends ConsumerState<HomePage> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
       // homePageRefreshNotifier.refresh();
-      ref.read(userProvider.notifier).fetchUserProfile();
-      ref.read(searchProvider.notifier).fetchUsers();
-      ref.read(searchProvider.notifier).fetchVisibleUsers();
+      try {
+      await ref.read(userProvider.notifier).fetchUserProfile();
+      await ref.read(searchProvider.notifier).fetchUsers();
+      await ref.read(searchProvider.notifier).fetchVisibleUsers();
+      } catch (e) {
+        print("Home Page Initialization error: $e");
+      }
     });
   }
 
@@ -101,7 +105,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                 PopupMenuItem(
                   onTap: () {
                     context.push("/edit-profile");
-                    context.pop();
+                    // context.pop();
                   },
                   child: const Text(
                     "Edit Profile",

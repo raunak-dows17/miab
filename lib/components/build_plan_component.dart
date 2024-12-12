@@ -135,12 +135,11 @@ class BuildPlanComponent extends ConsumerWidget {
                   children: [
                     ElevatedButton(
                       onPressed: () async {
-                        print(entry.value);
                         final Uri url = Uri.parse(entry.value);
                         if (await canLaunchUrl(url)) {
                           await launchUrl(url);
                         } else {
-                          // Handle error
+  
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(content: Text('Could not launch $url')),
                           );
