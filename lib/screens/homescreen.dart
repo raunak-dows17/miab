@@ -23,7 +23,7 @@ class _HomePageState extends ConsumerState<HomePage> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      homePageRefreshNotifier.refresh();
+      // homePageRefreshNotifier.refresh();
       ref.read(userProvider.notifier).fetchUserProfile();
       ref.read(searchProvider.notifier).fetchUsers();
       ref.read(searchProvider.notifier).fetchVisibleUsers();
@@ -169,6 +169,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                             value: 1, child: Text('Leave Group')),
                     ],
                   ).then((value) {
+                    if(context.mounted){
                     switch (value) {
                       case 0:
                         showDialog(
@@ -221,7 +222,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                           },
                         );
                         break;
-                    }
+                    }}
                   });
                 },
               ),
