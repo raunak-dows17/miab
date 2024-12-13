@@ -25,9 +25,9 @@ class _HomePageState extends ConsumerState<HomePage> {
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       // homePageRefreshNotifier.refresh();
       try {
-      await ref.read(userProvider.notifier).fetchUserProfile();
-      await ref.read(searchProvider.notifier).fetchUsers();
-      await ref.read(searchProvider.notifier).fetchVisibleUsers();
+        await ref.read(userProvider.notifier).fetchUserProfile();
+        await ref.read(searchProvider.notifier).fetchUsers();
+        await ref.read(searchProvider.notifier).fetchVisibleUsers();
       } catch (e) {
         print("Home Page Initialization error: $e");
       }
@@ -95,11 +95,13 @@ class _HomePageState extends ConsumerState<HomePage> {
             ],
           ),
           actions: [
-            TextButton(
-                onPressed: () {
-                  context.push("/enable-ai");
-                },
-                child: const Text("Enable Ai")),
+            userState.user!.isPremium
+                ? const SizedBox()
+                : TextButton(
+                    onPressed: () {
+                      context.push("/enable-ai");
+                    },
+                    child: const Text("Enable Ai")),
             PopupMenuButton(
               itemBuilder: (context) => [
                 PopupMenuItem(
@@ -173,60 +175,61 @@ class _HomePageState extends ConsumerState<HomePage> {
                             value: 1, child: Text('Leave Group')),
                     ],
                   ).then((value) {
-                    if(context.mounted){
-                    switch (value) {
-                      case 0:
-                        showDialog(
-                          context: context,
-                          builder: (context) {
-                            return AlertDialog(
-                              title: const Text('Confirm'),
-                              content: const Text(
-                                  'Do you want to delete this conversation?'),
-                              actions: [
-                                TextButton(
-                                  onPressed: () => Navigator.pop(context),
-                                  child: const Text('Cancel'),
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    ZIMKit().deleteConversation(
-                                        conversation.id, conversation.type);
-                                    Navigator.pop(context);
-                                  },
-                                  child: const Text('OK'),
-                                ),
-                              ],
-                            );
-                          },
-                        );
-                        break;
-                      case 1:
-                        showDialog(
-                          context: context,
-                          builder: (context) {
-                            return AlertDialog(
-                              title: const Text('Confirm'),
-                              content: const Text(
-                                  'Do you want to leave this group?'),
-                              actions: [
-                                TextButton(
-                                  onPressed: () => Navigator.pop(context),
-                                  child: const Text('Cancel'),
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    ZIMKit().leaveGroup(conversation.id);
-                                    Navigator.pop(context);
-                                  },
-                                  child: const Text('OK'),
-                                ),
-                              ],
-                            );
-                          },
-                        );
-                        break;
-                    }}
+                    if (context.mounted) {
+                      switch (value) {
+                        case 0:
+                          showDialog(
+                            context: context,
+                            builder: (context) {
+                              return AlertDialog(
+                                title: const Text('Confirm'),
+                                content: const Text(
+                                    'Do you want to delete this conversation?'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(context),
+                                    child: const Text('Cancel'),
+                                  ),
+                                  TextButton(
+                                    onPressed: () {
+                                      ZIMKit().deleteConversation(
+                                          conversation.id, conversation.type);
+                                      Navigator.pop(context);
+                                    },
+                                    child: const Text('OK'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+                          break;
+                        case 1:
+                          showDialog(
+                            context: context,
+                            builder: (context) {
+                              return AlertDialog(
+                                title: const Text('Confirm'),
+                                content: const Text(
+                                    'Do you want to leave this group?'),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(context),
+                                    child: const Text('Cancel'),
+                                  ),
+                                  TextButton(
+                                    onPressed: () {
+                                      ZIMKit().leaveGroup(conversation.id);
+                                      Navigator.pop(context);
+                                    },
+                                    child: const Text('OK'),
+                                  ),
+                                ],
+                              );
+                            },
+                          );
+                          break;
+                      }
+                    }
                   });
                 },
               ),

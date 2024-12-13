@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import "package:flutter_riverpod/flutter_riverpod.dart";
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:message_in_a_botlle/routes.dart';
 import 'package:zego_uikit_prebuilt_call/zego_uikit_prebuilt_call.dart';
 import 'package:zego_uikit_signaling_plugin/zego_uikit_signaling_plugin.dart';
@@ -15,10 +16,13 @@ void main() async {
   ZegoUIKit().initLog().then((value) => ZegoUIKitPrebuiltCallInvitationService()
       .useSystemCallingUI([ZegoUIKitSignalingPlugin()]));
 
-  ZIMKit().init(
+  await ZIMKit().init(
       appID: 1519377711,
       appSign:
           "3205f419ff097cb2c24f0d4268d1c7cd2b5a38a1f64dc5958a0a54d0a187c394");
+
+  Stripe.publishableKey =
+      "pk_live_51QASNDHrvHhkYUzEb7ga4eVDRbPXwM5EsWu1Cp7C11X9lQaknCHoo7bYz73vvphJYiZBvRMPScOTNpbZ7ssAwViI00tbjqcqAH";
 
   runApp(const ProviderScope(
     child: MyApp(),

@@ -5,8 +5,7 @@ class User {
   final String email;
   final String mobile;
   final String avatar;
-  // final bool isPremium;s
-
+  final bool isPremium;
   User({
     required this.id,
     required this.firstName,
@@ -14,7 +13,7 @@ class User {
     required this.email,
     required this.mobile,
     required this.avatar,
-    // required this.isPremium,
+    required this.isPremium,
   });
 
   factory User.fromJson(Map<String, dynamic> json) {
@@ -26,7 +25,7 @@ class User {
       mobile: json["mobile"],
       avatar: json["avatar"] ??
           "https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?t=st=1733298836~exp=1733302436~hmac=1f15270d55a1c3142a5cbd171f3c553dc74b45bc25afb5e19257171d3339169e&w=740",
-      // isPremium: json["isPremium"],
+      isPremium: json["isPremium"],
     );
   }
   Map<String, dynamic> toJson() {
@@ -37,7 +36,7 @@ class User {
       "email": email,
       "mobile": mobile,
       "avatar": avatar,
-      // "isPremium": isPremium,
+      "isPremium": isPremium,
     };
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:message_in_a_botlle/providers/user_provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class BuildPlanComponent extends ConsumerWidget {
@@ -20,6 +21,8 @@ class BuildPlanComponent extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final userState = ref.read(userProvider);
+
     return Card(
       elevation: 4,
       shape: RoundedRectangleBorder(
@@ -94,8 +97,10 @@ class BuildPlanComponent extends ConsumerWidget {
                 )),
             const SizedBox(height: 16),
             ElevatedButton(
-              onPressed: () {
-                _showPaymentOptionsDialog(context, paymentLinks);
+              onPressed: () async {
+                await ref
+                    .read(userProvider.notifier)
+                    .initiateStripePayment(context, price);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.teal.shade700,
@@ -105,7 +110,7 @@ class BuildPlanComponent extends ConsumerWidget {
                 ),
               ),
               child: const Text(
-                'Choose Plan',
+                'Pay Now',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 16,
@@ -139,7 +144,6 @@ class BuildPlanComponent extends ConsumerWidget {
                         if (await canLaunchUrl(url)) {
                           await launchUrl(url);
                         } else {
-  
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(content: Text('Could not launch $url')),
                           );

@@ -1,6 +1,8 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 import 'package:message_in_a_botlle/models/user_model.dart';
@@ -10,7 +12,7 @@ import 'package:zego_uikit_prebuilt_call/zego_uikit_prebuilt_call.dart';
 import 'package:zego_uikit_signaling_plugin/zego_uikit_signaling_plugin.dart';
 import 'package:zego_zimkit/zego_zimkit.dart';
 
-// String _url = "https://miab.onrender.com/api";
+// String _url = "https://48mz9gbq-5000.inc1.devtunnels.ms/api";
 String _url = "https://api.messageinabotlle.app/api";
 
 class UserState {
@@ -61,10 +63,10 @@ class UserNotifier extends StateNotifier<UserState> {
           isLoading: false,
         );
 
-        ZegoUIKitPrebuiltCallInvitationService().init(
+        await ZegoUIKitPrebuiltCallInvitationService().init(
           appID: 770575310,
           appSign:
-              "35f243a352844308a18bdacc7d10caec384b9d0c3e56a6958d46cc87b10c0183" /*input your AppSign*/,
+              "35f243a352844308a18bdacc7d10caec384b9d0c3e56a6958d46cc87b10c0183",
           userID: user.id,
           userName: "${user.firstName} ${user.lastName}",
           plugins: [ZegoUIKitSignalingPlugin(), getBeautyPlugin()],
@@ -79,15 +81,17 @@ class UserNotifier extends StateNotifier<UserState> {
 
             config
               ..turnOnCameraWhenJoining =
-                  ZegoCallInvitationType.videoCall == data.type ? true : false
+                  ZegoCallInvitationType.videoCall == data.type
               ..turnOnMicrophoneWhenJoining = true
               ..useSpeakerWhenJoining =
-                  ZegoCallInvitationType.videoCall == data.type ? true : false;
+                  ZegoCallInvitationType.videoCall == data.type;
 
-            config.bottomMenuBar.buttons = [
-              ZegoCallMenuBarButtonName.beautyEffectButton,
-              ...config.bottomMenuBar.buttons,
-            ];
+            config.bottomMenuBar.buttons = user.isPremium
+                ? [
+                    ZegoCallMenuBarButtonName.beautyEffectButton,
+                    ...config.bottomMenuBar.buttons,
+                  ]
+                : [];
 
             config.beauty = ZegoBeautyPluginConfig(
               license: () =>
@@ -173,6 +177,74 @@ class UserNotifier extends StateNotifier<UserState> {
         value: 90);
     plugin.setBeautyParams([config, config1], forceUpdateCache: true);
     return plugin;
+  }
+
+//   Users premium feature
+  Future<Map<String, dynamic>> _createPaymentIntent(double amount) async {
+    final response = await http.post(
+      Uri.parse('$_url/create-checkout-session'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({'email': state.user!.email, 'amount': amount}),
+    );
+
+    if (response.statusCode == 200) {
+      return jsonDecode(response.body);
+    } else {
+      throw Exception('Failed to create payment intent');
+    }
+  }
+
+  Future<void> _makeUserPremium(String price) async {
+    final response = await http.put(
+      Uri.parse('$_url/user/premium'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({'email': state.user!.email, "amount": price}),
+    );
+
+    if (response.statusCode == 200) {
+      await fetchUserProfile();
+    }
+
+    if (response.statusCode != 200) {
+      throw Exception('Failed to mark user as premium');
+    }
+  }
+
+  Future<void> initiateStripePayment(BuildContext context, String price) async {
+    try {
+      final paymentIntentData = await _createPaymentIntent(double.parse(price));
+
+      await Stripe.instance.initPaymentSheet(
+        paymentSheetParameters: SetupPaymentSheetParameters(
+          paymentIntentClientSecret: paymentIntentData["clientSecret"],
+          merchantDisplayName: "Message in a botlle",
+        ),
+      );
+
+      await Stripe.instance.presentPaymentSheet();
+
+      context.mounted
+          ? ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text("Payment Successful"),
+              ),
+            )
+          : null;
+
+      await _makeUserPremium(price);
+    } on StripeException catch (e) {
+      context.mounted
+          ? ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('${e.error.localizedMessage}')),
+            )
+          : null;
+    } catch (e) {
+      context.mounted
+          ? ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Error: $e')),
+            )
+          : null;
+    }
   }
 }
 
