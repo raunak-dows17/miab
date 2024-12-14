@@ -86,12 +86,19 @@ class UserNotifier extends StateNotifier<UserState> {
               ..useSpeakerWhenJoining =
                   ZegoCallInvitationType.videoCall == data.type;
 
-            config.bottomMenuBar.buttons = user.isPremium
-                ? [
-                    ZegoCallMenuBarButtonName.beautyEffectButton,
-                    ...config.bottomMenuBar.buttons,
-                  ]
-                : [];
+            if (user.isPremium) {
+              config.bottomMenuBar.buttons = [
+                ZegoCallMenuBarButtonName.beautyEffectButton,
+                ...config.bottomMenuBar.buttons,
+              ];
+            }
+
+            // config.bottomMenuBar.buttons = user.isPremium
+            //     ? [
+            //         ZegoCallMenuBarButtonName.beautyEffectButton,
+            //         ...config.bottomMenuBar.buttons,
+            //       ]
+            //     : [];
 
             config.beauty = ZegoBeautyPluginConfig(
               license: () =>
