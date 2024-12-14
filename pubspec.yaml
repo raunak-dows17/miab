@@ -2,7 +2,7 @@ name: message_in_a_botlle
 description: "Welcome to an anonymous world"
 publish_to: "none"
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.5.4
