@@ -76,14 +76,18 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
 
   void handleLogout(BuildContext context) {
     AlertDialog alert = AlertDialog(
-      title: const Text("Are you sure you want to logout"),
+      title: const Text("Are you sure you want to Delete your account?"),
+      content: const Text("You cannot recover your chats and friends"),
       actions: [
         TextButton(
             onPressed: () {
               ref.read(authProvider.notifier).logout();
-              context.go("/auth/login");
+              context.go("/auth/signup");
             },
-            child: const Text("Yes")),
+            child: const Text(
+              "Yes, Delete",
+              style: TextStyle(color: Colors.red),
+            )),
         TextButton(
             onPressed: () {
               Navigator.pop(context);
@@ -260,7 +264,13 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
                                 borderRadius: BorderRadius.circular(7),
                               )),
                           child: const Row(
-                            children: [Icon(Icons.logout), Text("LOGOUT")],
+                            children: [
+                              Icon(
+                                Icons.logout,
+                                color: Colors.red,
+                              ),
+                              Text("DELETE ACCOUNT")
+                            ],
                           ))
                     ],
                   )

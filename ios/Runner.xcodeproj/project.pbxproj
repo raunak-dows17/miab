@@ -9,67 +9,7 @@
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		15854E0C837F1881D9721FDC /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759CD02F4356B2B85CB3679F /* Pods_Runner.framework */; };
-		2A26DE272D09EB10002D4144 /* beautyMakeupBlusherApricotPink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDE92D09EB10002D4144 /* beautyMakeupBlusherApricotPink.bundle */; };
-		2A26DE282D09EB10002D4144 /* beautyMakeupBlusherMilkyOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDEA2D09EB10002D4144 /* beautyMakeupBlusherMilkyOrange.bundle */; };
-		2A26DE292D09EB10002D4144 /* beautyMakeupBlusherPeach.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDEB2D09EB10002D4144 /* beautyMakeupBlusherPeach.bundle */; };
-		2A26DE2A2D09EB10002D4144 /* beautyMakeupBlusherSlightlyDrunk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDEC2D09EB10002D4144 /* beautyMakeupBlusherSlightlyDrunk.bundle */; };
-		2A26DE2B2D09EB10002D4144 /* beautyMakeupBlusherSweetOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDED2D09EB10002D4144 /* beautyMakeupBlusherSweetOrange.bundle */; };
-		2A26DE2C2D09EB10002D4144 /* beautyMakeupColoredContactsBrownGreen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDEE2D09EB10002D4144 /* beautyMakeupColoredContactsBrownGreen.bundle */; };
-		2A26DE2D2D09EB10002D4144 /* beautyMakeupColoredContactsChocolateBrown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDEF2D09EB10002D4144 /* beautyMakeupColoredContactsChocolateBrown.bundle */; };
-		2A26DE2E2D09EB10002D4144 /* beautyMakeupColoredContactsDarknightBlack.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF02D09EB10002D4144 /* beautyMakeupColoredContactsDarknightBlack.bundle */; };
-		2A26DE2F2D09EB10002D4144 /* beautyMakeupColoredContactsLightsBrown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF12D09EB10002D4144 /* beautyMakeupColoredContactsLightsBrown.bundle */; };
-		2A26DE302D09EB10002D4144 /* beautyMakeupColoredContactsStarryBlue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF22D09EB10002D4144 /* beautyMakeupColoredContactsStarryBlue.bundle */; };
-		2A26DE312D09EB10002D4144 /* beautyMakeupEyelashesCurl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF32D09EB10002D4144 /* beautyMakeupEyelashesCurl.bundle */; };
-		2A26DE322D09EB10002D4144 /* beautyMakeupEyelashesEverlong.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF42D09EB10002D4144 /* beautyMakeupEyelashesEverlong.bundle */; };
-		2A26DE332D09EB10002D4144 /* beautyMakeupEyelashesNatural.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF52D09EB10002D4144 /* beautyMakeupEyelashesNatural.bundle */; };
-		2A26DE342D09EB10002D4144 /* beautyMakeupEyelashesTender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF62D09EB10002D4144 /* beautyMakeupEyelashesTender.bundle */; };
-		2A26DE352D09EB10002D4144 /* beautyMakeupEyelashesThick.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF72D09EB10002D4144 /* beautyMakeupEyelashesThick.bundle */; };
-		2A26DE362D09EB10002D4144 /* beautyMakeupEyelinerCatEye.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF82D09EB10002D4144 /* beautyMakeupEyelinerCatEye.bundle */; };
-		2A26DE372D09EB10002D4144 /* beautyMakeupEyelinerDignified.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDF92D09EB10002D4144 /* beautyMakeupEyelinerDignified.bundle */; };
-		2A26DE382D09EB10002D4144 /* beautyMakeupEyelinerInnocent.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDFA2D09EB10002D4144 /* beautyMakeupEyelinerInnocent.bundle */; };
-		2A26DE392D09EB10002D4144 /* beautyMakeupEyelinerNatural.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDFB2D09EB10002D4144 /* beautyMakeupEyelinerNatural.bundle */; };
-		2A26DE3A2D09EB10002D4144 /* beautyMakeupEyelinerNaughty.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDFC2D09EB10002D4144 /* beautyMakeupEyelinerNaughty.bundle */; };
-		2A26DE3B2D09EB10002D4144 /* beautyMakeupEyeshadowBrightOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDFD2D09EB10002D4144 /* beautyMakeupEyeshadowBrightOrange.bundle */; };
-		2A26DE3C2D09EB10002D4144 /* beautyMakeupEyeshadowMochaBrown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDFE2D09EB10002D4144 /* beautyMakeupEyeshadowMochaBrown.bundle */; };
-		2A26DE3D2D09EB10002D4144 /* beautyMakeupEyeshadowPinkMist.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DDFF2D09EB10002D4144 /* beautyMakeupEyeshadowPinkMist.bundle */; };
-		2A26DE3E2D09EB10002D4144 /* beautyMakeupEyeshadowShimmerPink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE002D09EB10002D4144 /* beautyMakeupEyeshadowShimmerPink.bundle */; };
-		2A26DE3F2D09EB10002D4144 /* beautyMakeupEyeshadowTeaBrown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE012D09EB10002D4144 /* beautyMakeupEyeshadowTeaBrown.bundle */; };
-		2A26DE402D09EB10002D4144 /* beautyMakeupLipstickCameoPink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE022D09EB10002D4144 /* beautyMakeupLipstickCameoPink.bundle */; };
-		2A26DE412D09EB10002D4144 /* beautyMakeupLipstickCoral.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE032D09EB10002D4144 /* beautyMakeupLipstickCoral.bundle */; };
-		2A26DE422D09EB10002D4144 /* beautyMakeupLipstickRedVelvet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE042D09EB10002D4144 /* beautyMakeupLipstickRedVelvet.bundle */; };
-		2A26DE432D09EB10002D4144 /* beautyMakeupLipstickRustRed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE052D09EB10002D4144 /* beautyMakeupLipstickRustRed.bundle */; };
-		2A26DE442D09EB10002D4144 /* beautyMakeupLipstickSweetOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE062D09EB10002D4144 /* beautyMakeupLipstickSweetOrange.bundle */; };
-		2A26DE452D09EB10002D4144 /* beautyStyleMakeupCutieCool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE072D09EB10002D4144 /* beautyStyleMakeupCutieCool.bundle */; };
-		2A26DE462D09EB10002D4144 /* beautyStyleMakeupFlawless.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE082D09EB10002D4144 /* beautyStyleMakeupFlawless.bundle */; };
-		2A26DE472D09EB10002D4144 /* beautyStyleMakeupInnocentEyes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE092D09EB10002D4144 /* beautyStyleMakeupInnocentEyes.bundle */; };
-		2A26DE482D09EB10002D4144 /* beautyStyleMakeupMilkyEyes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE0A2D09EB10002D4144 /* beautyStyleMakeupMilkyEyes.bundle */; };
-		2A26DE492D09EB10002D4144 /* beautyStyleMakeupPureSexy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE0B2D09EB10002D4144 /* beautyStyleMakeupPureSexy.bundle */; };
-		2A26DE4A2D09EB10002D4144 /* filterDreamyCozily.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE0C2D09EB10002D4144 /* filterDreamyCozily.bundle */; };
-		2A26DE4B2D09EB10002D4144 /* filterDreamySunset.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE0D2D09EB10002D4144 /* filterDreamySunset.bundle */; };
-		2A26DE4C2D09EB10002D4144 /* filterDreamySweet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE0E2D09EB10002D4144 /* filterDreamySweet.bundle */; };
-		2A26DE4D2D09EB10002D4144 /* filterGrayFilmlike.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE0F2D09EB10002D4144 /* filterGrayFilmlike.bundle */; };
-		2A26DE4E2D09EB10002D4144 /* filterGrayMonet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE102D09EB10002D4144 /* filterGrayMonet.bundle */; };
-		2A26DE4F2D09EB10002D4144 /* filterGrayNight.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE112D09EB10002D4144 /* filterGrayNight.bundle */; };
-		2A26DE502D09EB10002D4144 /* filterNaturalAutumn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE122D09EB10002D4144 /* filterNaturalAutumn.bundle */; };
-		2A26DE512D09EB10002D4144 /* filterNaturalBrighten.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE132D09EB10002D4144 /* filterNaturalBrighten.bundle */; };
-		2A26DE522D09EB10002D4144 /* filterNaturalCreamy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE142D09EB10002D4144 /* filterNaturalCreamy.bundle */; };
-		2A26DE532D09EB10002D4144 /* filterNaturalFresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE152D09EB10002D4144 /* filterNaturalFresh.bundle */; };
-		2A26DE542D09EB10002D4144 /* stickerAnimal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE162D09EB10002D4144 /* stickerAnimal.bundle */; };
-		2A26DE552D09EB10002D4144 /* stickerCat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE172D09EB10002D4144 /* stickerCat.bundle */; };
-		2A26DE562D09EB10002D4144 /* stickerClawMachine.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE182D09EB10002D4144 /* stickerClawMachine.bundle */; };
-		2A26DE572D09EB10002D4144 /* stickerClown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE192D09EB10002D4144 /* stickerClown.bundle */; };
-		2A26DE582D09EB10002D4144 /* stickerCoolGirl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE1A2D09EB10002D4144 /* stickerCoolGirl.bundle */; };
-		2A26DE592D09EB10002D4144 /* stickerDeer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE1B2D09EB10002D4144 /* stickerDeer.bundle */; };
-		2A26DE5A2D09EB10002D4144 /* stickerDive.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE1C2D09EB10002D4144 /* stickerDive.bundle */; };
-		2A26DE5B2D09EB10002D4144 /* stickerSailorMoon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE1D2D09EB10002D4144 /* stickerSailorMoon.bundle */; };
-		2A26DE5C2D09EB10002D4144 /* stickerWatermelon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE1E2D09EB10002D4144 /* stickerWatermelon.bundle */; };
-		2A26DE5D2D09EB10002D4144 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE202D09EB10002D4144 /* image1.jpg */; };
-		2A26DE5E2D09EB10002D4144 /* BackgroundSegmentation.model in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE222D09EB10002D4144 /* BackgroundSegmentation.model */; };
-		2A26DE5F2D09EB10002D4144 /* CommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE232D09EB10002D4144 /* CommonResources.bundle */; };
-		2A26DE602D09EB10002D4144 /* FaceDetection.model in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE242D09EB10002D4144 /* FaceDetection.model */; };
-		2A26DE612D09EB10002D4144 /* StickerBaseResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A26DE252D09EB10002D4144 /* StickerBaseResources.bundle */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
-		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -103,76 +43,13 @@
 /* Begin PBXFileReference section */
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
-		2A26DDE92D09EB10002D4144 /* beautyMakeupBlusherApricotPink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupBlusherApricotPink.bundle; sourceTree = "<group>"; };
-		2A26DDEA2D09EB10002D4144 /* beautyMakeupBlusherMilkyOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupBlusherMilkyOrange.bundle; sourceTree = "<group>"; };
-		2A26DDEB2D09EB10002D4144 /* beautyMakeupBlusherPeach.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupBlusherPeach.bundle; sourceTree = "<group>"; };
-		2A26DDEC2D09EB10002D4144 /* beautyMakeupBlusherSlightlyDrunk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupBlusherSlightlyDrunk.bundle; sourceTree = "<group>"; };
-		2A26DDED2D09EB10002D4144 /* beautyMakeupBlusherSweetOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupBlusherSweetOrange.bundle; sourceTree = "<group>"; };
-		2A26DDEE2D09EB10002D4144 /* beautyMakeupColoredContactsBrownGreen.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupColoredContactsBrownGreen.bundle; sourceTree = "<group>"; };
-		2A26DDEF2D09EB10002D4144 /* beautyMakeupColoredContactsChocolateBrown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupColoredContactsChocolateBrown.bundle; sourceTree = "<group>"; };
-		2A26DDF02D09EB10002D4144 /* beautyMakeupColoredContactsDarknightBlack.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupColoredContactsDarknightBlack.bundle; sourceTree = "<group>"; };
-		2A26DDF12D09EB10002D4144 /* beautyMakeupColoredContactsLightsBrown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupColoredContactsLightsBrown.bundle; sourceTree = "<group>"; };
-		2A26DDF22D09EB10002D4144 /* beautyMakeupColoredContactsStarryBlue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupColoredContactsStarryBlue.bundle; sourceTree = "<group>"; };
-		2A26DDF32D09EB10002D4144 /* beautyMakeupEyelashesCurl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelashesCurl.bundle; sourceTree = "<group>"; };
-		2A26DDF42D09EB10002D4144 /* beautyMakeupEyelashesEverlong.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelashesEverlong.bundle; sourceTree = "<group>"; };
-		2A26DDF52D09EB10002D4144 /* beautyMakeupEyelashesNatural.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelashesNatural.bundle; sourceTree = "<group>"; };
-		2A26DDF62D09EB10002D4144 /* beautyMakeupEyelashesTender.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelashesTender.bundle; sourceTree = "<group>"; };
-		2A26DDF72D09EB10002D4144 /* beautyMakeupEyelashesThick.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelashesThick.bundle; sourceTree = "<group>"; };
-		2A26DDF82D09EB10002D4144 /* beautyMakeupEyelinerCatEye.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelinerCatEye.bundle; sourceTree = "<group>"; };
-		2A26DDF92D09EB10002D4144 /* beautyMakeupEyelinerDignified.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelinerDignified.bundle; sourceTree = "<group>"; };
-		2A26DDFA2D09EB10002D4144 /* beautyMakeupEyelinerInnocent.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelinerInnocent.bundle; sourceTree = "<group>"; };
-		2A26DDFB2D09EB10002D4144 /* beautyMakeupEyelinerNatural.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelinerNatural.bundle; sourceTree = "<group>"; };
-		2A26DDFC2D09EB10002D4144 /* beautyMakeupEyelinerNaughty.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyelinerNaughty.bundle; sourceTree = "<group>"; };
-		2A26DDFD2D09EB10002D4144 /* beautyMakeupEyeshadowBrightOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyeshadowBrightOrange.bundle; sourceTree = "<group>"; };
-		2A26DDFE2D09EB10002D4144 /* beautyMakeupEyeshadowMochaBrown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyeshadowMochaBrown.bundle; sourceTree = "<group>"; };
-		2A26DDFF2D09EB10002D4144 /* beautyMakeupEyeshadowPinkMist.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyeshadowPinkMist.bundle; sourceTree = "<group>"; };
-		2A26DE002D09EB10002D4144 /* beautyMakeupEyeshadowShimmerPink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyeshadowShimmerPink.bundle; sourceTree = "<group>"; };
-		2A26DE012D09EB10002D4144 /* beautyMakeupEyeshadowTeaBrown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupEyeshadowTeaBrown.bundle; sourceTree = "<group>"; };
-		2A26DE022D09EB10002D4144 /* beautyMakeupLipstickCameoPink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupLipstickCameoPink.bundle; sourceTree = "<group>"; };
-		2A26DE032D09EB10002D4144 /* beautyMakeupLipstickCoral.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupLipstickCoral.bundle; sourceTree = "<group>"; };
-		2A26DE042D09EB10002D4144 /* beautyMakeupLipstickRedVelvet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupLipstickRedVelvet.bundle; sourceTree = "<group>"; };
-		2A26DE052D09EB10002D4144 /* beautyMakeupLipstickRustRed.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupLipstickRustRed.bundle; sourceTree = "<group>"; };
-		2A26DE062D09EB10002D4144 /* beautyMakeupLipstickSweetOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyMakeupLipstickSweetOrange.bundle; sourceTree = "<group>"; };
-		2A26DE072D09EB10002D4144 /* beautyStyleMakeupCutieCool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyStyleMakeupCutieCool.bundle; sourceTree = "<group>"; };
-		2A26DE082D09EB10002D4144 /* beautyStyleMakeupFlawless.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyStyleMakeupFlawless.bundle; sourceTree = "<group>"; };
-		2A26DE092D09EB10002D4144 /* beautyStyleMakeupInnocentEyes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyStyleMakeupInnocentEyes.bundle; sourceTree = "<group>"; };
-		2A26DE0A2D09EB10002D4144 /* beautyStyleMakeupMilkyEyes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyStyleMakeupMilkyEyes.bundle; sourceTree = "<group>"; };
-		2A26DE0B2D09EB10002D4144 /* beautyStyleMakeupPureSexy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = beautyStyleMakeupPureSexy.bundle; sourceTree = "<group>"; };
-		2A26DE0C2D09EB10002D4144 /* filterDreamyCozily.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterDreamyCozily.bundle; sourceTree = "<group>"; };
-		2A26DE0D2D09EB10002D4144 /* filterDreamySunset.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterDreamySunset.bundle; sourceTree = "<group>"; };
-		2A26DE0E2D09EB10002D4144 /* filterDreamySweet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterDreamySweet.bundle; sourceTree = "<group>"; };
-		2A26DE0F2D09EB10002D4144 /* filterGrayFilmlike.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterGrayFilmlike.bundle; sourceTree = "<group>"; };
-		2A26DE102D09EB10002D4144 /* filterGrayMonet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterGrayMonet.bundle; sourceTree = "<group>"; };
-		2A26DE112D09EB10002D4144 /* filterGrayNight.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterGrayNight.bundle; sourceTree = "<group>"; };
-		2A26DE122D09EB10002D4144 /* filterNaturalAutumn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterNaturalAutumn.bundle; sourceTree = "<group>"; };
-		2A26DE132D09EB10002D4144 /* filterNaturalBrighten.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterNaturalBrighten.bundle; sourceTree = "<group>"; };
-		2A26DE142D09EB10002D4144 /* filterNaturalCreamy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterNaturalCreamy.bundle; sourceTree = "<group>"; };
-		2A26DE152D09EB10002D4144 /* filterNaturalFresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = filterNaturalFresh.bundle; sourceTree = "<group>"; };
-		2A26DE162D09EB10002D4144 /* stickerAnimal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerAnimal.bundle; sourceTree = "<group>"; };
-		2A26DE172D09EB10002D4144 /* stickerCat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerCat.bundle; sourceTree = "<group>"; };
-		2A26DE182D09EB10002D4144 /* stickerClawMachine.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerClawMachine.bundle; sourceTree = "<group>"; };
-		2A26DE192D09EB10002D4144 /* stickerClown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerClown.bundle; sourceTree = "<group>"; };
-		2A26DE1A2D09EB10002D4144 /* stickerCoolGirl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerCoolGirl.bundle; sourceTree = "<group>"; };
-		2A26DE1B2D09EB10002D4144 /* stickerDeer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerDeer.bundle; sourceTree = "<group>"; };
-		2A26DE1C2D09EB10002D4144 /* stickerDive.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerDive.bundle; sourceTree = "<group>"; };
-		2A26DE1D2D09EB10002D4144 /* stickerSailorMoon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerSailorMoon.bundle; sourceTree = "<group>"; };
-		2A26DE1E2D09EB10002D4144 /* stickerWatermelon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = stickerWatermelon.bundle; sourceTree = "<group>"; };
-		2A26DE202D09EB10002D4144 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
-		2A26DE222D09EB10002D4144 /* BackgroundSegmentation.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = BackgroundSegmentation.model; sourceTree = "<group>"; };
-		2A26DE232D09EB10002D4144 /* CommonResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonResources.bundle; sourceTree = "<group>"; };
-		2A26DE242D09EB10002D4144 /* FaceDetection.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceDetection.model; sourceTree = "<group>"; };
-		2A26DE252D09EB10002D4144 /* StickerBaseResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StickerBaseResources.bundle; sourceTree = "<group>"; };
 		331C807B294A618700263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		4CC01932D6F7C824F1B15DB8 /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		759CD02F4356B2B85CB3679F /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
 		950B6C3B80AC7511B85098C1 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
-		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
-		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C146FB1CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -181,9 +58,15 @@
 		B24DC4C326D2833DFC2D13DE /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		B312936DB8B5F7E72CA93C1B /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEE31ADD82888C9D1C71394 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		EDABF10E2D1184500004FEB0 /* BeautyResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BeautyResources; sourceTree = "<group>"; };
+		EDABF1102D119A1C0004FEB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F63E8B74DB72857316A4501A /* Pods-RunnerTests.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.profile.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.profile.xcconfig"; sourceTree = "<group>"; };
 		F883B933C81A0A3DE93C5D1A /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EDABF11E2D11A05A0004FEB0 /* Flutter */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Flutter; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9546CF3EBF791791BD39C012 /* Frameworks */ = {
@@ -205,89 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A26DE1F2D09EB10002D4144 /* AdvancedResources */ = {
-			isa = PBXGroup;
-			children = (
-				2A26DDE92D09EB10002D4144 /* beautyMakeupBlusherApricotPink.bundle */,
-				2A26DDEA2D09EB10002D4144 /* beautyMakeupBlusherMilkyOrange.bundle */,
-				2A26DDEB2D09EB10002D4144 /* beautyMakeupBlusherPeach.bundle */,
-				2A26DDEC2D09EB10002D4144 /* beautyMakeupBlusherSlightlyDrunk.bundle */,
-				2A26DDED2D09EB10002D4144 /* beautyMakeupBlusherSweetOrange.bundle */,
-				2A26DDEE2D09EB10002D4144 /* beautyMakeupColoredContactsBrownGreen.bundle */,
-				2A26DDEF2D09EB10002D4144 /* beautyMakeupColoredContactsChocolateBrown.bundle */,
-				2A26DDF02D09EB10002D4144 /* beautyMakeupColoredContactsDarknightBlack.bundle */,
-				2A26DDF12D09EB10002D4144 /* beautyMakeupColoredContactsLightsBrown.bundle */,
-				2A26DDF22D09EB10002D4144 /* beautyMakeupColoredContactsStarryBlue.bundle */,
-				2A26DDF32D09EB10002D4144 /* beautyMakeupEyelashesCurl.bundle */,
-				2A26DDF42D09EB10002D4144 /* beautyMakeupEyelashesEverlong.bundle */,
-				2A26DDF52D09EB10002D4144 /* beautyMakeupEyelashesNatural.bundle */,
-				2A26DDF62D09EB10002D4144 /* beautyMakeupEyelashesTender.bundle */,
-				2A26DDF72D09EB10002D4144 /* beautyMakeupEyelashesThick.bundle */,
-				2A26DDF82D09EB10002D4144 /* beautyMakeupEyelinerCatEye.bundle */,
-				2A26DDF92D09EB10002D4144 /* beautyMakeupEyelinerDignified.bundle */,
-				2A26DDFA2D09EB10002D4144 /* beautyMakeupEyelinerInnocent.bundle */,
-				2A26DDFB2D09EB10002D4144 /* beautyMakeupEyelinerNatural.bundle */,
-				2A26DDFC2D09EB10002D4144 /* beautyMakeupEyelinerNaughty.bundle */,
-				2A26DDFD2D09EB10002D4144 /* beautyMakeupEyeshadowBrightOrange.bundle */,
-				2A26DDFE2D09EB10002D4144 /* beautyMakeupEyeshadowMochaBrown.bundle */,
-				2A26DDFF2D09EB10002D4144 /* beautyMakeupEyeshadowPinkMist.bundle */,
-				2A26DE002D09EB10002D4144 /* beautyMakeupEyeshadowShimmerPink.bundle */,
-				2A26DE012D09EB10002D4144 /* beautyMakeupEyeshadowTeaBrown.bundle */,
-				2A26DE022D09EB10002D4144 /* beautyMakeupLipstickCameoPink.bundle */,
-				2A26DE032D09EB10002D4144 /* beautyMakeupLipstickCoral.bundle */,
-				2A26DE042D09EB10002D4144 /* beautyMakeupLipstickRedVelvet.bundle */,
-				2A26DE052D09EB10002D4144 /* beautyMakeupLipstickRustRed.bundle */,
-				2A26DE062D09EB10002D4144 /* beautyMakeupLipstickSweetOrange.bundle */,
-				2A26DE072D09EB10002D4144 /* beautyStyleMakeupCutieCool.bundle */,
-				2A26DE082D09EB10002D4144 /* beautyStyleMakeupFlawless.bundle */,
-				2A26DE092D09EB10002D4144 /* beautyStyleMakeupInnocentEyes.bundle */,
-				2A26DE0A2D09EB10002D4144 /* beautyStyleMakeupMilkyEyes.bundle */,
-				2A26DE0B2D09EB10002D4144 /* beautyStyleMakeupPureSexy.bundle */,
-				2A26DE0C2D09EB10002D4144 /* filterDreamyCozily.bundle */,
-				2A26DE0D2D09EB10002D4144 /* filterDreamySunset.bundle */,
-				2A26DE0E2D09EB10002D4144 /* filterDreamySweet.bundle */,
-				2A26DE0F2D09EB10002D4144 /* filterGrayFilmlike.bundle */,
-				2A26DE102D09EB10002D4144 /* filterGrayMonet.bundle */,
-				2A26DE112D09EB10002D4144 /* filterGrayNight.bundle */,
-				2A26DE122D09EB10002D4144 /* filterNaturalAutumn.bundle */,
-				2A26DE132D09EB10002D4144 /* filterNaturalBrighten.bundle */,
-				2A26DE142D09EB10002D4144 /* filterNaturalCreamy.bundle */,
-				2A26DE152D09EB10002D4144 /* filterNaturalFresh.bundle */,
-				2A26DE162D09EB10002D4144 /* stickerAnimal.bundle */,
-				2A26DE172D09EB10002D4144 /* stickerCat.bundle */,
-				2A26DE182D09EB10002D4144 /* stickerClawMachine.bundle */,
-				2A26DE192D09EB10002D4144 /* stickerClown.bundle */,
-				2A26DE1A2D09EB10002D4144 /* stickerCoolGirl.bundle */,
-				2A26DE1B2D09EB10002D4144 /* stickerDeer.bundle */,
-				2A26DE1C2D09EB10002D4144 /* stickerDive.bundle */,
-				2A26DE1D2D09EB10002D4144 /* stickerSailorMoon.bundle */,
-				2A26DE1E2D09EB10002D4144 /* stickerWatermelon.bundle */,
-			);
-			path = AdvancedResources;
-			sourceTree = "<group>";
-		};
-		2A26DE212D09EB10002D4144 /* BackgroundImages */ = {
-			isa = PBXGroup;
-			children = (
-				2A26DE202D09EB10002D4144 /* image1.jpg */,
-			);
-			path = BackgroundImages;
-			sourceTree = "<group>";
-		};
-		2A26DE262D09EB10002D4144 /* BeautyResources */ = {
-			isa = PBXGroup;
-			children = (
-				2A26DE1F2D09EB10002D4144 /* AdvancedResources */,
-				2A26DE212D09EB10002D4144 /* BackgroundImages */,
-				2A26DE222D09EB10002D4144 /* BackgroundSegmentation.model */,
-				2A26DE232D09EB10002D4144 /* CommonResources.bundle */,
-				2A26DE242D09EB10002D4144 /* FaceDetection.model */,
-				2A26DE252D09EB10002D4144 /* StickerBaseResources.bundle */,
-			);
-			name = BeautyResources;
-			path = ../../../../Downloads/BeautyResources;
-			sourceTree = "<group>";
-		};
 		331C8082294A63A400263BE5 /* RunnerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,26 +105,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9740EEB11CF90186004384FC /* Flutter */ = {
-			isa = PBXGroup;
-			children = (
-				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
-				9740EEB21CF90195004384FC /* Debug.xcconfig */,
-				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
-				9740EEB31CF90195004384FC /* Generated.xcconfig */,
-			);
-			name = Flutter;
-			sourceTree = "<group>";
-		};
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
-				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
 				331C8082294A63A400263BE5 /* RunnerTests */,
 				F8DB68C48093023FA9A43A94 /* Pods */,
 				4E2177F845DFF6E345863F58 /* Frameworks */,
+				EDABF11E2D11A05A0004FEB0 /* Flutter */,
 			);
 			sourceTree = "<group>";
 		};
@@ -340,7 +129,6 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
-				2A26DE262D09EB10002D4144 /* BeautyResources */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -349,6 +137,7 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+				EDABF10E2D1184500004FEB0 /* BeautyResources */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -383,6 +172,9 @@
 			dependencies = (
 				331C8086294A63A400263BE5 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				EDABF11E2D11A05A0004FEB0 /* Flutter */,
+			);
 			name = RunnerTests;
 			productName = RunnerTests;
 			productReference = 331C8081294A63A400263BE5 /* RunnerTests.xctest */;
@@ -405,6 +197,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EDABF11E2D11A05A0004FEB0 /* Flutter */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -462,69 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A26DE4F2D09EB10002D4144 /* filterGrayNight.bundle in Resources */,
-				2A26DE4D2D09EB10002D4144 /* filterGrayFilmlike.bundle in Resources */,
-				2A26DE2F2D09EB10002D4144 /* beautyMakeupColoredContactsLightsBrown.bundle in Resources */,
-				2A26DE3B2D09EB10002D4144 /* beautyMakeupEyeshadowBrightOrange.bundle in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
-				2A26DE342D09EB10002D4144 /* beautyMakeupEyelashesTender.bundle in Resources */,
-				2A26DE442D09EB10002D4144 /* beautyMakeupLipstickSweetOrange.bundle in Resources */,
-				2A26DE3E2D09EB10002D4144 /* beautyMakeupEyeshadowShimmerPink.bundle in Resources */,
-				2A26DE612D09EB10002D4144 /* StickerBaseResources.bundle in Resources */,
-				2A26DE382D09EB10002D4144 /* beautyMakeupEyelinerInnocent.bundle in Resources */,
-				2A26DE5C2D09EB10002D4144 /* stickerWatermelon.bundle in Resources */,
-				2A26DE272D09EB10002D4144 /* beautyMakeupBlusherApricotPink.bundle in Resources */,
-				2A26DE582D09EB10002D4144 /* stickerCoolGirl.bundle in Resources */,
-				2A26DE5B2D09EB10002D4144 /* stickerSailorMoon.bundle in Resources */,
-				2A26DE2D2D09EB10002D4144 /* beautyMakeupColoredContactsChocolateBrown.bundle in Resources */,
-				2A26DE412D09EB10002D4144 /* beautyMakeupLipstickCoral.bundle in Resources */,
-				2A26DE292D09EB10002D4144 /* beautyMakeupBlusherPeach.bundle in Resources */,
-				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
-				2A26DE432D09EB10002D4144 /* beautyMakeupLipstickRustRed.bundle in Resources */,
-				2A26DE502D09EB10002D4144 /* filterNaturalAutumn.bundle in Resources */,
-				2A26DE522D09EB10002D4144 /* filterNaturalCreamy.bundle in Resources */,
-				2A26DE312D09EB10002D4144 /* beautyMakeupEyelashesCurl.bundle in Resources */,
-				2A26DE372D09EB10002D4144 /* beautyMakeupEyelinerDignified.bundle in Resources */,
-				2A26DE2E2D09EB10002D4144 /* beautyMakeupColoredContactsDarknightBlack.bundle in Resources */,
-				2A26DE5F2D09EB10002D4144 /* CommonResources.bundle in Resources */,
-				2A26DE332D09EB10002D4144 /* beautyMakeupEyelashesNatural.bundle in Resources */,
-				2A26DE4E2D09EB10002D4144 /* filterGrayMonet.bundle in Resources */,
-				2A26DE602D09EB10002D4144 /* FaceDetection.model in Resources */,
-				2A26DE3F2D09EB10002D4144 /* beautyMakeupEyeshadowTeaBrown.bundle in Resources */,
-				2A26DE3A2D09EB10002D4144 /* beautyMakeupEyelinerNaughty.bundle in Resources */,
-				2A26DE4A2D09EB10002D4144 /* filterDreamyCozily.bundle in Resources */,
-				2A26DE552D09EB10002D4144 /* stickerCat.bundle in Resources */,
-				2A26DE362D09EB10002D4144 /* beautyMakeupEyelinerCatEye.bundle in Resources */,
-				2A26DE3D2D09EB10002D4144 /* beautyMakeupEyeshadowPinkMist.bundle in Resources */,
-				2A26DE492D09EB10002D4144 /* beautyStyleMakeupPureSexy.bundle in Resources */,
-				2A26DE5D2D09EB10002D4144 /* image1.jpg in Resources */,
-				2A26DE302D09EB10002D4144 /* beautyMakeupColoredContactsStarryBlue.bundle in Resources */,
-				2A26DE542D09EB10002D4144 /* stickerAnimal.bundle in Resources */,
-				2A26DE4C2D09EB10002D4144 /* filterDreamySweet.bundle in Resources */,
-				2A26DE2B2D09EB10002D4144 /* beautyMakeupBlusherSweetOrange.bundle in Resources */,
-				2A26DE352D09EB10002D4144 /* beautyMakeupEyelashesThick.bundle in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
-				2A26DE392D09EB10002D4144 /* beautyMakeupEyelinerNatural.bundle in Resources */,
-				2A26DE572D09EB10002D4144 /* stickerClown.bundle in Resources */,
-				2A26DE472D09EB10002D4144 /* beautyStyleMakeupInnocentEyes.bundle in Resources */,
-				2A26DE482D09EB10002D4144 /* beautyStyleMakeupMilkyEyes.bundle in Resources */,
-				2A26DE3C2D09EB10002D4144 /* beautyMakeupEyeshadowMochaBrown.bundle in Resources */,
-				2A26DE512D09EB10002D4144 /* filterNaturalBrighten.bundle in Resources */,
-				2A26DE532D09EB10002D4144 /* filterNaturalFresh.bundle in Resources */,
-				2A26DE2A2D09EB10002D4144 /* beautyMakeupBlusherSlightlyDrunk.bundle in Resources */,
-				2A26DE402D09EB10002D4144 /* beautyMakeupLipstickCameoPink.bundle in Resources */,
-				2A26DE592D09EB10002D4144 /* stickerDeer.bundle in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
-				2A26DE5A2D09EB10002D4144 /* stickerDive.bundle in Resources */,
-				2A26DE282D09EB10002D4144 /* beautyMakeupBlusherMilkyOrange.bundle in Resources */,
-				2A26DE422D09EB10002D4144 /* beautyMakeupLipstickRedVelvet.bundle in Resources */,
-				2A26DE5E2D09EB10002D4144 /* BackgroundSegmentation.model in Resources */,
-				2A26DE452D09EB10002D4144 /* beautyStyleMakeupCutieCool.bundle in Resources */,
-				2A26DE4B2D09EB10002D4144 /* filterDreamySunset.bundle in Resources */,
-				2A26DE322D09EB10002D4144 /* beautyMakeupEyelashesEverlong.bundle in Resources */,
-				2A26DE462D09EB10002D4144 /* beautyStyleMakeupFlawless.bundle in Resources */,
-				2A26DE562D09EB10002D4144 /* stickerClawMachine.bundle in Resources */,
-				2A26DE2C2D09EB10002D4144 /* beautyMakeupColoredContactsBrownGreen.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +418,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				97C147001CF9000F007C117D /* Base */,
+				EDABF1102D119A1C0004FEB0 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -736,6 +472,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -745,12 +482,12 @@
 		};
 		249021D4217E4FDB00AE95B9 /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			baseConfigurationReference = B24DC4C326D2833DFC2D13DE /* Pods-Runner.profile.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 8R78MVW643;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Message In a Botlle";
@@ -921,6 +658,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -932,12 +670,12 @@
 		};
 		97C147061CF9000F007C117D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			baseConfigurationReference = 950B6C3B80AC7511B85098C1 /* Pods-Runner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 8R78MVW643;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Message In a Botlle";
@@ -957,12 +695,12 @@
 		};
 		97C147071CF9000F007C117D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			baseConfigurationReference = EAEE31ADD82888C9D1C71394 /* Pods-Runner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = 8R78MVW643;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Message In a Botlle";

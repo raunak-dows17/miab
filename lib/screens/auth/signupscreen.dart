@@ -1,7 +1,12 @@
+import 'dart:io';
+
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:message_in_a_botlle/providers/auth_provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SignUpScreen extends ConsumerStatefulWidget {
   const SignUpScreen({super.key});
@@ -23,11 +28,42 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
   bool isPasswordVisible = false;
   bool isConfirmPasswordVisible = false;
 
-  bool isAgreed = false;
+  bool _isEulaAccepted = false;
 
-  void handleAgreement(bool? value) => setState(() {
-        isAgreed = value!;
-      });
+  final String _termsUrl = "https://docs.google.com/document/d/1qK1md_FH9Ab74wnVLcyKQvZEj4BDX38a3-iAoHnyIJU/edit?usp=sharing";
+
+  Future<String> _loadEulaContent() async {
+    try {
+      final file = rootBundle.loadString("assets/eula.txt");
+      return await file;
+    } catch (e) {
+      return "Error loading EULA content: $e";
+    }
+  }
+
+  void _showEulaPopup() async {
+    final eulaContent = await _loadEulaContent();
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text("End User License Agreement (EULA)"),
+          content: SingleChildScrollView(
+            child: Text(eulaContent),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: const Text("Close"),
+            ),
+          ],
+        );
+      },
+    );
+  }
 
   void handleShowPassword() => setState(() {
         isPasswordVisible = !isPasswordVisible;
@@ -255,58 +291,48 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                       Row(
                         children: [
                           Checkbox(
-                            value: isAgreed,
-                            onChanged: handleAgreement,
+                            value: _isEulaAccepted,
+                            onChanged: (value) {
+                              setState(() {
+                                _isEulaAccepted = value ?? false;
+                              });
+                            },
                           ),
-                          Row(
-                            children: [
-                              const Text(
-                                'I agree to all the ',
-                                style: TextStyle(
-                                  color: Color(0xFF303030),
-                                  fontSize: 14,
-                                  fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.w500,
-                                  height: 0,
-                                ),
-                              ),
-                              InkWell(
-                                onTap: () {},
-                                child: const Text(
-                                  'Terms',
-                                  style: TextStyle(
-                                    color: Color(0xFFFF8682),
-                                    fontSize: 14,
-                                    fontFamily: 'Poppins',
-                                    fontWeight: FontWeight.w600,
-                                    height: 0,
+                          Expanded(
+                            child: RichText(
+                              text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyLarge,
+                                children: [
+                                  const TextSpan(text: "I accept the "),
+                                  TextSpan(
+                                    text: "Terms & Conditions",
+                                    style: const TextStyle(color: Color(0xFFFF8682)),
+                                    recognizer: TapGestureRecognizer()
+                                      ..onTap = () async {
+                                        if (await canLaunchUrl(
+                                            Uri.parse(_termsUrl))) {
+                                          await launchUrl(Uri.parse(_termsUrl));
+                                        } else {
+                                          ScaffoldMessenger.of(context)
+                                              .showSnackBar(
+                                            SnackBar(
+                                              content: Text(
+                                                  "Could not open $_termsUrl"),
+                                            ),
+                                          );
+                                        }
+                                      },
                                   ),
-                                ),
-                              ),
-                              const Text(
-                                ' and ',
-                                style: TextStyle(
-                                  color: Color(0xFF303030),
-                                  fontSize: 14,
-                                  fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.w500,
-                                  height: 0,
-                                ),
-                              ),
-                              InkWell(
-                                onTap: () {},
-                                child: const Text(
-                                  'Privacy Policies',
-                                  style: TextStyle(
-                                    color: Color(0xFFFF8682),
-                                    fontSize: 14,
-                                    fontFamily: 'Poppins',
-                                    fontWeight: FontWeight.w600,
-                                    height: 0,
+                                  const TextSpan(text: " and the "),
+                                  TextSpan(
+                                    text: "EULA",
+                                    style: const TextStyle(color: Color(0xFFFF8682)),
+                                    recognizer: TapGestureRecognizer()
+                                      ..onTap = _showEulaPopup,
                                   ),
-                                ),
+                                ],
                               ),
-                            ],
+                            ),
                           ),
                         ],
                       ),
@@ -318,14 +344,24 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
                             ? null
                             : () {
                                 if (formKey.currentState!.validate()) {
-                                  ref.read(authProvider.notifier).signUp(
-                                      firstName: firstNameController.text,
-                                      lastname: lastNameController.text,
-                                      email: emailController.text,
-                                      mobile: mobileController.text,
-                                      password: passwordController.text);
+                                  if (!_isEulaAccepted) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                        content: Text(
+                                            "You must accept the EULA to proceed."),
+                                        backgroundColor: Colors.red,
+                                      ),
+                                    );
+                                  } else {
+                                    ref.read(authProvider.notifier).signUp(
+                                        firstName: firstNameController.text,
+                                        lastname: lastNameController.text,
+                                        email: emailController.text,
+                                        mobile: mobileController.text,
+                                        password: passwordController.text);
 
-                                  context.go("/");
+                                    context.go("/");
+                                  }
                                 }
                               },
                         style: ElevatedButton.styleFrom(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:zego_uikit_prebuilt_call/zego_uikit_prebuilt_call.dart';
 import 'package:zego_zimkit/zego_zimkit.dart';
 
@@ -89,7 +90,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
               callID: widget.id,
               icon: ButtonIcon(
                 icon: const Icon(
-                  Icons.call,
+                  Icons.call_rounded,
                   color: Colors.teal,
                 ),
               ),
@@ -105,7 +106,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
               callID: widget.id,
               icon: ButtonIcon(
                 icon: const Icon(
-                  Icons.videocam,
+                  Icons.videocam_rounded,
                   color: Colors.teal,
                 ),
               ),
@@ -117,6 +118,62 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       showMoreButton: false,
       showPickFileButton: false,
       messageInputMaxLines: 5,
+      onMessageItemLongPress: (BuildContext context,
+          LongPressStartDetails details,
+          ZIMKitMessage message,
+          Function defaultAction) {
+        final conversationBox = context.findRenderObject()! as RenderBox;
+        final offset = conversationBox
+            .localToGlobal(Offset(0, conversationBox.size.height / 2));
+
+        if (message.isMine && message.textContent == null) {
+          showMenu(
+            context: context,
+            position: RelativeRect.fromLTRB(
+              details.globalPosition.dx,
+              offset.dy,
+              details.globalPosition.dx,
+              offset.dy,
+            ),
+            items: [
+              PopupMenuItem(
+                  value: 0, child: Text('Delete ${message.type.name}')),
+            ],
+          ).then((value) {
+            switch (value) {
+              case 0:
+                if (message.fileContent != null ||
+                    message.videoContent != null ||
+                    message.imageContent != null) {
+                  AlertDialog alert = AlertDialog(
+                    title: const Text(
+                        "Are you sure you want to delete this message"),
+                    actions: [
+                      TextButton(
+                          onPressed: () {
+                            ZIMKit().deleteMessage([message]);
+                            Navigator.pop(context);
+                          },
+                          child: const Text("Yes")),
+                      TextButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: const Text("No")),
+                    ],
+                  );
+
+                  if (context.mounted) {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => alert);
+                  }
+                }
+                break;
+            }
+          });
+        }
+      },
       inputDecoration: const InputDecoration(
           hintText: "Write your message",
           border: OutlineInputBorder(borderSide: BorderSide.none)),
